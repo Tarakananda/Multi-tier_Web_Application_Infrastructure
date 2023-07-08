@@ -7,13 +7,13 @@ terraform {
 }
 provider "aws" {
   region = "us-east-1"
-  access_key = "AKIARBBGJ4FIU5ORKKMF" #"provide_your_access_key"
-  secret_key = "sB9ZuOeWau2huqUrl3EBZov5k1JPSosuV0ywAEpK" #"provide_your_secret_key"
+  access_key = "Provide_Your_Access_Key"
+  secret_key = "Provide_Your_Secret_key" 
 }
 
 # Create VPC
 resource "aws_vpc" "my_vpc" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = "10.0.0.0/16"      #replace with desired CIDR Block
 }
 
 # Create Subnets
